@@ -190,9 +190,9 @@ def process_calendar_request(user_input: str) -> Optional[CalendarResponse]:
     return None
 
   # Route to appropriate handler
-  if route_result.request_type == "new_event":
+  if route_result.request_type == "NEW":
     return handle_new_event(route_result.description)
-  elif route_result.request_type == "modify_event":
+  elif route_result.request_type == "MODIFY":
     return handle_modify_event(route_result.description)
   else:
     logger.warning("Request type not supported")
@@ -213,7 +213,7 @@ if result:
 # --------------------------------------------------------------
 
 modify_event_input = (
-    "Can you move the team meeting with Alice and Bob to Wednesday at 3pm instead?"
+    "Can you move the team meeting with Alice and Bob to Wednesday at 3pm instead? I think Quang also wants to join as well."
 )
 result = process_calendar_request(modify_event_input)
 if result:
@@ -223,7 +223,7 @@ if result:
 # Step 5: Test with invalid request
 # --------------------------------------------------------------
 
-invalid_input = "What's the weather like today?"
+invalid_input = "A"
 result = process_calendar_request(invalid_input)
 if not result:
   print("Request not recognized as a calendar operation")
