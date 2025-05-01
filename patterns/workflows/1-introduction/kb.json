@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "question": "What is the return policy",
+      "answer": "You can return the product within 30 days of purchase. Please contact our customer support for assistance."
+    },
+    {
+      "id": 2,
+      "question": "How do I track my order",
+      "answer": "Once your order is shipped, you will receive a tracking number via email. You can use this tracking number on our website to track the status of your delivery."
+    },
+    {
+      "id": 3,
+      "question": "Can I change my order",
+      "answer": "Unfortunately, once an order is processed, it cannot be modified. If you need to make changes, please contact our customer support as soon as possible."
+    },
+    {
+      "id": 4,
+      "question": "Do you ship internally",
+      "answer": "Yes, we ship to over 50 countries worldwide."
+    }
+  ]
+}
