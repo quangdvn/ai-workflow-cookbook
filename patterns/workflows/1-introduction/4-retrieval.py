@@ -101,10 +101,10 @@ for tool_call in response.choices[0].message.tool_calls:
 # 4 - Supply result and call model again
 class InquiryResponse(BaseModel):
   answer: str = Field(
-      description="The answer to user inquiry."
+      description="The answer to user inquiry"
   )
   source: int = Field(
-      description="The record id of the answer."
+      description="The record id of the answer"
   )
 
 
